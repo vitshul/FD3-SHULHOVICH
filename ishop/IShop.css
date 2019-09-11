@@ -1,0 +1,51 @@
+﻿body
+{
+    background: whitesmoke;
+}
+
+﻿.IShopBlock
+{
+  border: double gray 3px;
+  width: 180px;
+  padding: 3px 7px;
+  
+  
+}
+
+.IShopBlock .GoodsStorage
+{
+    color: blue;
+    border: 3px solid black;
+    background: white;
+    
+    
+}
+
+.IShopBlock .GoodsStorage .Goods
+{
+font-size: 35px;
+margin: 15px;
+padding: 10px;
+border: 1px solid green;
+border-radius: 5px;
+background: whitesmoke;
+}
+
+.IShopBlock .GoodsStorage .Goods:hover
+{
+filter: brightness(90%);
+}
+
+.IShopBlock .GoodsStorage .Goods .Foto
+{
+width: 200px;
+float: left;
+}
+
+
+.IShopBlock .GoodsStorage .Goods .Name, .Cost, .Balance
+{
+margin-left: 300px;
+}
+
+
