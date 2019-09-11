@@ -8,8 +8,6 @@
   border: double gray 3px;
   width: 180px;
   padding: 3px 7px;
-  
-  
 }
 
 .IShopBlock .GoodsStorage
@@ -17,8 +15,6 @@
     color: blue;
     border: 3px solid black;
     background: white;
-    
-    
 }
 
 .IShopBlock .GoodsStorage .Goods
