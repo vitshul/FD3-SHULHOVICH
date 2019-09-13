@@ -10,6 +10,7 @@
 
         var storageGoods = [];
 
+        var img1;
 
         this.props.goods.forEach(element => {
 
@@ -18,8 +19,8 @@
                     { key: element.code, className: 'Goods' },
                     React.DOM.div({ className: 'Foto' }, element.urlFoto),
                     React.DOM.div({ className: 'Name' }, element.nameGoods),
-                    React.DOM.div({ className: 'Cost' }, 'cost: '+element.cost),
-                    React.DOM.div({ className: 'Balance' }, 'balance: '+element.balance),
+                    React.DOM.div({ className: 'Cost' }, 'cost: ' + element.cost),
+                    React.DOM.div({ className: 'Balance' }, 'balance: ' + element.balance),
 
                 )
             );
@@ -33,3 +34,4 @@
     },
 
 });
+

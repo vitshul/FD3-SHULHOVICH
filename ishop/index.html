@@ -7,7 +7,10 @@
 </head>
 
 <body>
-    <div id="container"></div>
+    <!--  <img src="https://media.kasperskydaily.com/wp-content/uploads/sites/90/2018/11/14160059/digital-tv-howto-featured.jpg" alt="foto">
+ -->
+    <div id="container">
+    </div>
 
     <script src="https://unpkg.com/react@15/dist/react.js"></script>
     <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
@@ -27,17 +30,43 @@
         При разработке компонента максимально использовать forEach и другие методы обработки массивов.
          */
         var ishopName = 'Интернет мазагин "Бабочка"';
+        /*         
         var shopGoods = [
-            { code: 1, nameGoods: 'TV', cost: 1000, urlFoto: 'foto/tv.webp', balance: 5 },
-            { code: 2, nameGoods: 'Notebook', cost: 1600, urlFoto: 'foto/notebook.jpeg', balance: 12 },
-            { code: 3, nameGoods: 'Freezer', cost: 600, urlFoto: 'foto/freezer.jpg', balance: 2 },
-        ];
+            {
+                code: 1, nameGoods: 'TV', cost: 1000,
+                urlFoto: 'https://media.kasperskydaily.com/wp-content/uploads/sites/90/2018/11/14160059/digital-tv-howto-featured.jpg',
+                balance: 5
+            },
+                { code: 2, nameGoods: 'Notebook', cost: 1600, urlFoto: 'https://content2.onliner.by/catalog/device/header/59f3290690906d5eaaaa155bbc7487c9.jpeg', balance: 12 },
+               { code: 3, nameGoods: 'Freezer', cost: 600, urlFoto: 'https://content2.onliner.by/catalog/device/header/85782efdf4c26cac8856c6e5ec9f2eab.jpeg', balance: 2 },
+        ]; */
 
+        var shopGoods = [
+            {
+                code: 1, nameGoods: 'TV', cost: 1000,
+                urlFoto: 'foto/tv.webp',
+                balance: 5
+            },
+                { code: 2, nameGoods: 'Notebook', cost: 1600, 
+                urlFoto: 'foto/notebook.jpeg', 
+                balance: 12 },
+               { code: 3, nameGoods: 'Freezer', cost: 600, 
+               urlFoto: 'foto/freezer.jpg', 
+               balance: 2 },
+        ];
         ReactDOM.render(
             React.createElement(IShopBlock, { nameShop: ishopName, goods: shopGoods }),
             document.getElementById('container')
         );
 
+
+        var fotoStore = document.querySelectorAll('.Foto');
+        var fotoSrc = [];
+        fotoStore.forEach(elem => {
+            let txt = elem.innerText;
+            elem.textContent = '';
+            elem.insertAdjacentHTML('beforeend', '<img src="' + txt + '">');
+        });
     </script>
 
 </body>

@@ -19,6 +19,7 @@
 
 .IShopBlock .GoodsStorage .Goods
 {
+height: 150px;
 font-size: 35px;
 margin: 15px;
 padding: 10px;
@@ -42,6 +43,11 @@ float: left;
 .IShopBlock .GoodsStorage .Goods .Name, .Cost, .Balance
 {
 margin-left: 300px;
+}
+
+
+img{
+  height: 150px;
 }
 
 
