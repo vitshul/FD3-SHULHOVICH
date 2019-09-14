@@ -17,7 +17,8 @@
             storageGoods.push(
                 React.DOM.div(
                     { key: element.code, className: 'Goods' },
-                    React.DOM.div({ className: 'Foto' }, element.urlFoto),
+
+                    React.DOM.img({src: element.urlFoto, alt: element.nameGoods}),
                     React.DOM.div({ className: 'Name' }, element.nameGoods),
                     React.DOM.div({ className: 'Cost' }, 'cost: ' + element.cost),
                     React.DOM.div({ className: 'Balance' }, 'balance: ' + element.balance),
