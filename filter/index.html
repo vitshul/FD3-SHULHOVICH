@@ -19,7 +19,7 @@
 
     <script>
 
-         var words = [
+         var wordsStorage = [
            'машина',
            'вертолет',
            'самолет',
@@ -34,7 +34,7 @@
 
 
         ReactDOM.render(
-            React.createElement(IsFilter, { goods: words }),
+            React.createElement(IsFilter,  { words: wordsStorage }),
             document.getElementById('container')
         );
 

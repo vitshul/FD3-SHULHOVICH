@@ -1,0 +1,15 @@
+.textButton{
+    margin:10px;
+    width: 150px;
+}
+
+.textView{
+    overflow-y: scroll;
+    display: block;
+    width: 250px;
+    height: 70px;
+    padding: 5px;
+    border: solid 1px black;
+    margin: 20px;
+    
+}
