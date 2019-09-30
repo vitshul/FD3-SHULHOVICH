@@ -22,6 +22,7 @@ var IsFilter = React.createClass({
 
         });
 
+
         return React.DOM.div({ className: 'Filter' },
             React.DOM.div({ className: 'Storage' }, storage),
         );
