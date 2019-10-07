@@ -20,12 +20,14 @@
 .IShopBlock .GoodsStorage .Goods
 {
 height: 150px;
+width: 1250px;
 font-size: 35px;
-margin: 15px;
+margin: 3px 15px;
 padding: 10px;
 border: 1px solid green;
 border-radius: 5px;
 background: whitesmoke;
+
 }
 
 .IShopBlock .GoodsStorage .Goods:hover
@@ -35,14 +37,50 @@ filter: brightness(90%);
 
 .IShopBlock .GoodsStorage .Goods .Foto
 {
-width: 200px;
+width: 250px;
 float: left;
+border: solid 1px black;
+background: white;
+display: flex;
+justify-content: center;
 }
 
 
-.IShopBlock .GoodsStorage .Goods .Name, .Cost, .Balance
+.IShopBlock .GoodsStorage .Goods .Name, .Cost, .Balance, .btnDiv
 {
-margin-left: 300px;
+position: absolute;
+border: solid 1px black;
+width: 250px;
+height: 150px;
+padding: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.IShopBlock .GoodsStorage .Goods .Name
+{
+  margin-left: 250px;
+}
+
+.IShopBlock .GoodsStorage .Goods .Name
+{
+margin-left: 250px;
+}
+
+.IShopBlock .GoodsStorage .Goods  .Cost
+{
+margin-left: 500px;
+}
+
+
+.IShopBlock .GoodsStorage .Goods  .Balance
+{
+margin-left: 750px;
+}
+
+.IShopBlock .GoodsStorage .Goods  .btnDiv
+{
+margin-left: 1000px;
 }
 
 img{
@@ -50,4 +88,25 @@ img{
   float: left;
 }
 
+.IShopBlock .btnDelete{
+  width: 200px;
+  height: 50px;
+  background: white;
+  font-size: 20px;
+}
 
+.IShopBlock .GoodsStorage .Goods .FotoTitle
+{
+width: 250px;
+background: none;
+height: 50px;
+}
+
+.IShopBlock .GoodsStorage .TitleLine
+{
+height: 50px;
+}
+
+.IShopBlock .GoodsStorage .BackgroundPink{
+  background: pink;
+}
